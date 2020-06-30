@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<%@ Import Namespace="VDEditor.Code" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <link href="/content/site.css" rel="stylesheet" type="text/css" />
+    <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+    <script>!window.jQuery && document.write('<script src="/scripts/jquery-1.4.1.min.js"><\/script>')</script>
+    <script type="text/javascript" src="/scripts/scripts.js"></script>
+</head>
+
+<body>
+    <div class="page">
+
+        <div id="header">
+            <div id="title">
+                <h1>VD Administration</h1>
+            </div>
+              
+            <div id="logindisplay">
+                V1.2
+            </div> 
+            
+            <div id="menucontainer">
+            
+                <ul id="menu">              
+                    <li><%: Html.ActionLink("Home", "index", "home")%></li>
+                    <li><%: Html.ActionLink("Types", "index", "vehicletypes")%></li>
+                    <li><%: Html.ActionLink("Manufacturers", "index", "manufacturers")%></li>
+                    <li><%: Html.ActionLink("Models", "list", "vehiclemodels")%></li>
+                    <!--<li><%: Html.ActionLink("Clients", "index", "clients")%></li>-->
+                </ul>
+            
+            </div>
+        </div>
+
+        <div id="main">
+
+            <%= Helpers.RenderPageMessage() %>
+
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            <div id="footer">
+                &copy; Copyright <%= DateTime.Now.Year %> Jay Van Der Zant
+            </div>
+        </div>
+    </div>
+</body>
+</html>

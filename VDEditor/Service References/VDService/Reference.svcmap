@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="52a14457-124c-4626-a6c3-9d2c6df3d842" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://vdws.mediapanther.com/vdservice.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="VdService.disco" MetadataType="Disco" ID="ac85a277-61ca-4aa8-aa39-5a02df1aef46" SourceId="1" SourceUrl="http://vdws.mediapanther.com/VdService.svc?disco" />
+    <MetadataFile FileName="VdService.xsd" MetadataType="Schema" ID="b885bf8b-f556-4de0-aef7-c49d603ef789" SourceId="1" SourceUrl="http://vdws.mediapanther.com/VdService.svc?xsd=xsd1" />
+    <MetadataFile FileName="VdService1.xsd" MetadataType="Schema" ID="2db29786-92bd-4101-80af-1263129d2452" SourceId="1" SourceUrl="http://vdws.mediapanther.com/VdService.svc?xsd=xsd2" />
+    <MetadataFile FileName="VdService2.xsd" MetadataType="Schema" ID="37c75520-84e9-4e9b-b454-b88922b8357d" SourceId="1" SourceUrl="http://vdws.mediapanther.com/VdService.svc?xsd=xsd3" />
+    <MetadataFile FileName="VdService3.xsd" MetadataType="Schema" ID="6de92d72-0169-49be-8f3d-bd2fc9c9e6d7" SourceId="1" SourceUrl="http://vdws.mediapanther.com/VdService.svc?xsd=xsd0" />
+    <MetadataFile FileName="VdService4.xsd" MetadataType="Schema" ID="26cfe0e5-3120-4cf3-959d-d097178502ce" SourceId="1" SourceUrl="http://vdws.mediapanther.com/VdService.svc?xsd=xsd4" />
+    <MetadataFile FileName="VdService.wsdl" MetadataType="Wsdl" ID="0139f4eb-5386-4d9f-89dd-8153f5f4ea2a" SourceId="1" SourceUrl="http://vdws.mediapanther.com/VdService.svc?wsdl" />
+    <MetadataFile FileName="VdService5.xsd" MetadataType="Schema" ID="917d956f-38f2-46a2-bf60-69e4635e2f94" SourceId="1" SourceUrl="http://vdws.mediapanther.com/VdService.svc?xsd=xsd5" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
